@@ -1,0 +1,45 @@
+.stay-updated {
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient($site-black,#331e08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .stay-updated__text {
+        font-family: sans-serif;
+        color: #fff;
+        margin-bottom: 40px;
+
+        &--large {
+            font-size: 35px;
+        }
+    }
+
+    .stay-updated__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stay-updated__email {
+        width: 450px;
+        height: 55px;
+        padding: 15px;
+        font-size: 15px;
+        border-style: none;
+        background-color: #222;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .stay-updated__submit {
+        @include button;
+        width: 180px;
+        height: 40px;
+        border-style: none;
+        background-color: #f63;
+        border-radius: 0;
+    }
+}

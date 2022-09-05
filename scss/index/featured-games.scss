@@ -1,0 +1,55 @@
+.featured {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: $content-width;
+        min-height: 100px;
+        font-family: sans-serif;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    &__text {
+        font-size: 30px;
+        color: $site-black;
+    }
+    
+    &__button {
+        @include button;
+        border-color: $site-black;
+        background-color: #fff;
+        color: $site-black;
+        height: 35px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        min-height: 200px;
+    }
+
+    &__item {
+        width: 15%;
+
+    }
+
+    &__item-image {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    &__item-text {
+        color: $site-black;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 3px;
+        &--gray {
+            color: #333;
+        }
+    }
+}

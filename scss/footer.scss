@@ -1,0 +1,25 @@
+.footer {
+    height: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: gray;
+
+    &__copyright {
+        font-family: sans-serif;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    &__icons {
+        color: gray;
+        font-size: 22px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}

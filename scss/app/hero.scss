@@ -1,0 +1,85 @@
+.app-hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/Echo-LP-BG-Desktop-no-triangle-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        width: 1150px;
+    }
+
+    &__content {
+        height: 100%;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__logo {
+        width: 125px;
+        margin-bottom: 65px;
+    }
+
+    &__text {
+        font-family: sans-serif;
+        color: #fff;
+        line-height: 135%;
+        font-size: 15px;
+
+        &--large {
+            font-size: 35px;
+        }
+
+        &--link {
+            text-decoration-color: #fff;
+        }
+
+        &--small {
+            font-size: 12px;
+            margin-top: 50px;
+        }
+    }
+
+    &__button {
+        @include button;
+        border-radius: 0;
+        border-style: none;
+        background-color: #f63;
+        width: 125px;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 18px;
+    }
+
+    &__windows {
+        font-size: 20px;
+    }
+
+    &__gradient {
+        position: absolute;
+        height: 120px;
+        width: 110%;
+        bottom: 90px;
+        left: -20px;
+        background-image: linear-gradient(rgba(0,0,0,0),rgba(255,100,50,0.16));
+        transform: rotate(355deg);
+    }
+
+    &__black-bar {
+        position: absolute;
+        height: 130px;
+        width: 110%;
+        bottom: -38px;
+        left: -20px;
+        background-color: $site-black;
+        transform: rotate(355deg);
+    }
+}

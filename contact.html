@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__content">
+            <div class="navbar__left">
+                <a href="index.html"><img src="images/anvil.svg" alt="" class="navbar__logo"></a>
+                <a href="app.html" class="navbar__main-link">CurseForge App</a>
+                <a href="support.html" class="navbar__main-link">Knowledge Base</a>
+                <a href="contact.html" class="navbar__main-link">Contact Us</a>
+            </div>
+            <div class="navbar__right">
+                <a href="#" class="navbar__acc">Account info missing?</a>
+                <a href="#"><i class="fa-solid fa-message navbar__icon"></i></a>
+                <a href="#"><i class="fa-solid fa-bell navbar__icon"></i></a>
+                <a href="#"><button class="navbar__btn">Dashboard</button></a>
+                <a href="#"><i class="fa-solid fa-user navbar__icon navbar__icon--large"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="title-bar">
+        <div class="title-bar__logo">
+            <img src="images/anvil.svg" alt="" class="title-bar__anvil">
+            <a href="index.html"><img src="images/cf-logo.svg" alt="" class="title-bar__cf"></a>
+            <p class="title-bar__line">|</p>
+            <p class="title-bar__text">Support</p>
+        </div>
+        <div class="title-bar__buttons">
+
+        </div>
+    </section>
+
+    <section class="small-search">
+        <div class="small-search__searchbar">
+            <div class="small-search__icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" class="small-search__input" placeholder="Search">
+        </div>
+        <img src="images/flame.png" alt="" class="small-search__bg">
+    </section>
+
+    <section class="contact">
+        <div class="contact__content">
+            <p class="contact__title">Submit a ticket</p>
+            <form action="#" class="contact__form">
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">Email</p>
+                        <p class="contact__label-text contact__label-text--red">*</p>
+                    </div>
+                    <input type="email" class="contact__input" placeholder="Email">
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">Subject</p>
+                        <p class="contact__label-text contact__label-text--red">*</p>
+                    </div>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">App</p>
+                    </div>
+                    <select name="app" id="app" class="contact__select">
+                        <option value="curseforge" class="contact__option">CurseForge</option>
+                        <option value="overwolf" class="contact__option">Overwolf</option>
+                    </select>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">What kind of support do you need?</p>
+                        <p class="contact__label-text contact__label-text--red">*</p>
+                    </div>
+                    <select name="type" id="type" class="contact__select">
+                        <option value="..." class="contact__option">...</option>
+                        <option value="author" class="contact__option">Authors related</option>
+                        <option value="other" class="contact__option">All other issues</option>
+                    </select>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">CF Username</p>
+                    </div>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">CF Project Link</p>
+                    </div>
+                    <input type="text" class="contact__input">
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">Game</p>
+                    </div>
+                    <select name="game" id="game" class="contact__select">
+                        <option value="..." class="contact__option">...</option>
+                        <option value="none" class="contact__option">None</option>
+                        <option value="minecraft" class="contact__option">Minecraft</option>
+                        <option value="world-of-warcraft" class="contact__option">World of Warcraft</option>
+                        <option value="chronicles-of-arcadia" class="contact__option">Chronicles of Arcadia</option>
+                        <option value="darkest-dungeon" class="contact__option">Darkest Dungeon</option>
+                        <option value="grand-theft-auto-v" class="contact__option">Grand Theft Auto V</option>
+                        <option value="kerbal-space-program" class="contact__option">Kerbal Space Program</option>
+                        <option value="runes-of-magic" class="contact__option">Runes of Magic</option>
+                        <option value="secret-world-legends" class="contact__option">Secret World Legends</option>
+                        <option value="staxel" class="contact__option">Staxel</option>
+                        <option value="skyrim" class="contact__option">Skyrim</option>
+                        <option value="stardew-valley" class="contact__option">Stardew Valley</option>
+                        <option value="surviving-mars" class="contact__option">Surviving Mars</option>
+                        <option value="terraria" class="contact__option">Terraria</option>
+                        <option value="other" class="contact__option">Other</option>
+                    </select>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label">
+                        <p class="contact__label-text">OS</p>
+                    </div>
+                    <select name="os" id="os" class="contact__select">
+                        <option value="..." class="contact__option">...</option>
+                        <option value="win11" class="contact__option">Win 11</option>
+                        <option value="win10" class="contact__option">Win 10</option>
+                        <option value="win7" class="contact__option">Win 7</option>
+                        <option value="win8" class="contact__option">Win 8/8.1</option>
+                        <option value="macos" class="contact__option">MacOS</option>
+                        <option value="linux" class="contact__option">Linux</option>
+                        <option value="none" class="contact__option">None</option>
+                    </select>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label contact__label--uncentered">
+                        <p class="contact__label-text">Description</p>
+                        <p class="contact__label-text contact__label-text--red">*</p>
+                    </div>
+                    <textarea name="description" id="description" cols="30" rows="10" class="contact__description"></textarea>
+                </div>
+                <div class="contact__row">
+                    <div class="contact__label"></div>
+                    <div class="contact__info">
+                        <a href="#" class="contact__add-file">+ Attach a file</a>
+                        <p class="contact__logs">Our support team might ask for your Overwolf logs, save time by attaching them now.</p>
+                        <a href="#" class="contact__how-to-logs">How to get your Overwolf logs</a>
+                        <div class="contact__buttons">
+                            <button class="contact__button"><i class="fa-solid fa-video contact__btn-icon"></i> RECORD VIDEO</button>
+                            <button class="contact__button"><i class="fa-solid fa-upload contact__btn-icon"></i> IMPORT</button>
+                        </div>
+                        <div class="contact__submit">
+                            <input type="submit" value="Submit" class="contact__submit-btn contact__submit-btn--orange">
+                            <a href="support.html"><button class="contact__submit-btn">Cancel</button></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section class="talk">
+        <div class="talk__content">
+            <p class="talk__title">Talk to us</p>
+            <div class="talk__buttons">
+                <div class="talk__button talk__button--blue">
+                    <p class="talk__text"><i class="fa-brands fa-discord talk__icon"></i>Ask the community</p>
+                </div>
+                <div class="talk__button talk__button--orange">
+                    <p class="talk__text"><i class="fa-solid fa-lightbulb talk__icon"></i>Ask the community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="links">
+        <div class="links__col">
+            <div class="links__logo-container">
+                <img src="images/overwolf.PNG" alt="" class="links__logo">
+            </div>
+        </div>
+        <div class="links__col">
+            <p class="links__text links__text--header">Creators</p>
+            <a href="#"><p class="links__text">Build an App</p></a>
+            <a href="#"><p class="links__text">Publish a mod</p></a>
+            <a href="#"><p class="links__text">Why Overwolf</p></a>
+            <a href="#"><p class="links__text">App documentation</p></a>
+            <a href="#"><p class="links__text">Mod documentation</p></a>
+            <a href="#"><p class="links__text">Creator services</p></a>
+            <a href="#"><p class="links__text">Apply for funding</p></a>
+        </div>
+        <div class="links__col">
+            <p class="links__text links__text--header">Gamers</p>
+            <a href="#"><p class="links__text">Discover Mods</p></a>
+            <a href="#"><p class="links__text">Discover Apps</p></a>
+            <a href="#"><p class="links__text">Gameplay First</p></a>
+            <a href="#"><p class="links__text">Download Overwolf</p></a>
+            <a href="#"><p class="links__text">Suggest a feature</p></a>
+        </div>
+        <div class="links__col">
+            <p class="links__text links__text--header">Company</p>
+            <a href="#"><p class="links__text">About us</p></a>
+            <a href="#"><p class="links__text">Our story</p></a>
+            <a href="#"><p class="links__text">Careers</p></a>
+            <a href="#"><p class="links__text">Blog</p></a>
+            <a href="#"><p class="links__text">Brand Guidelines</p></a>
+        </div>
+        <div class="links__col">
+            <p class="links__text links__text--header">Work With Us</p>
+            <a href="#"><p class="links__text">Partners</p></a>
+            <a href="#"><p class="links__text">Advertisers</p></a>
+            <a href="#"><p class="links__text">Influencers</p></a>
+            <a href="#"><p class="links__text">Game Developers</p></a>
+        </div>
+        <div class="links__col">
+            <p class="links__text links__text--header">Support & Privacy</p>
+            <a href="#"><p class="links__text">Help Center</p></a>
+            <a href="#"><p class="links__text">Supported Games</p></a>
+            <a href="#"><p class="links__text">Terms of service</p></a>
+            <a href="#"><p class="links__text">Privacy Policy</p></a>
+            <a href="#"><p class="links__text">Overwolf Alphas</p></a>
+            <a href="#"><p class="links__text">Licenses</p></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; Overwolf 2021</p>
+        <div class="footer__icons">
+            <i class="fa-brands fa-discord icn"></i>
+            <i class="fa-brands fa-reddit icn"></i>
+            <i class="fa-brands fa-facebook icn"></i>
+            <i class="fa-brands fa-linkedin icn"></i>
+            <i class="fa-brands fa-square-twitter icn"></i>
+        </div>
+    </footer>
+</body>
+</html>

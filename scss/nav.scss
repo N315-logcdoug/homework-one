@@ -1,0 +1,63 @@
+.navbar {
+    background-color: $site-black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: $content-width;
+        display: flex;
+        justify-content: space-between;
+        font-family: sans-serif;
+        
+    }
+
+    &__left {
+        min-width: 200px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__main-link {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    &__logo {
+        height: 30px;
+    }
+
+    &__right {
+        min-width: 200px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 20px;
+        }
+    }
+
+    &__acc {
+        text-decoration: none;
+        color: #ffbb22;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    &__icon {
+        color: #fff;
+        &--large {
+            
+            font-size: 25px;
+        }
+    }
+    
+    &__btn {
+        @include button
+    }
+}

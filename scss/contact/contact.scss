@@ -1,0 +1,124 @@
+.contact {
+    width: 100%;
+    min-height: 800px;
+    background-color: $site-black;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: $content-width;
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    &__title {
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+
+    &__row {
+        min-height: 35px;
+        display: flex;
+        margin-bottom: 30px;
+        //align-items: center;
+    }
+
+    &__label {
+        display: flex;
+        width: 170px;
+        align-items: center;
+
+        &--uncentered{
+            align-items:baseline;
+        }
+
+    }
+
+    &__label-text {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin-right: 5px;
+        margin-bottom: 0;
+
+        &--red {
+            color: #f00;
+        }
+    }
+
+    &__input {
+        width: 500px;
+        height: 30px;
+        padding-left: 5px;
+        border-style: none;
+        border-radius: 4px;
+    }
+
+    &__select {
+        width: 220px;
+        height: 30px;
+        border-style: none;
+    }
+
+    &__description {
+        width: 500px;
+        height: 160px;
+        border-style: none;
+        border-radius: 4px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__add-file {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #f63;
+        margin-bottom: 30px;
+    }
+
+    &__logs {
+        font-family: sans-serif;
+        color: #aaa;
+        margin-bottom: 30px;
+    }
+
+    &__how-to-logs {
+        font-family: sans-serif;
+        color: #f63;
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        @include button;
+        border-style: none;
+        background-color: #f63;
+        height: 40px;
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    &__btn-icon {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    &__submit-btn {
+        @include button;
+        border-radius: 0;
+
+        &--orange {
+            background-color: #f63;
+            border-color: #f63;
+        }
+
+    }
+}
